@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-# Script Copyright www.fornesia.com
 # ==========================
 # 
 
@@ -88,7 +87,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>www.fornesia.com</pre>" > /home/vps/public_html/index.html
+echo "<pre>www.vpsmurah.me</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/vps.conf"
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
@@ -114,8 +113,8 @@ service nginx restart
 #wget -O /etc/openvpn/1194-client.ovpn "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/1194-client.conf"
 #sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-useradd -M -s /bin/false fornesia
-echo "fornesia:$PASS" | chpasswd
+useradd -M -s /bin/false vpsmurah
+echo "vpsmurah:$PASS" | chpasswd
 #echo "username" >> pass.txt
 #echo "password" >> pass.txt
 #tar cf client.tar 1194-client.ovpn pass.txt
@@ -298,7 +297,7 @@ echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "Fail2Ban : [on]"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Auto Script Installer Vps - www.fornesia.com"  | tee -a log-install.txt
+echo "Auto Script Installer Vps - www.vpsmurah.me"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
