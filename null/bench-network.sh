@@ -1,1 +1,1 @@
-wget https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/master/null/bench.sh -O - -o /dev/null|bash
+wget https://raw.githubusercontent.com/aabell3/ngaco/master/null/bench.sh -O - -o /dev/null|bash
