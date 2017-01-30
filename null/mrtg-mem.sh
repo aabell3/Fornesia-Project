@@ -8,4 +8,4 @@ echo $FREE
 echo $SWAP
 echo $UP
 echo "----------------------------------------------------------------"
-echo "                       www.fornesia.com                         " 
+echo "                       www.vpsmurah.me                        " 
