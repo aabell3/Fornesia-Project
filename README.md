@@ -1,7 +1,11 @@
 FNS_Debian7
 ===========================================
 
-Auto Install Script For VPS Debian7 - www.fornesia.com
+apt-get install wget
+
+
+wget https://raw.githubusercontent.com/aabell3/ngaco/master/debian7.sh
+bash debian7.sh
 
 ===========================================
 Autoscript Include:
