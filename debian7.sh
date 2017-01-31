@@ -223,10 +223,10 @@ wget -O speedtest_cli.py "https://raw.githubusercontent.com/aabell3/ngaco/master
 wget -O bench-network.sh "https://raw.githubusercontent.com/aabell3/ngaco/master/null/bench-network.sh"
 wget -O ps_mem.py "https://raw.githubusercontent.com/aabell3/ngaco/master/null/ps_mem.py"
 wget -O dropmon "https://raw.githubusercontent.com/aabell3/ngaco/master/null/dropmon.sh"
-wget -O user-login.sh "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/freak/user-login.sh"
-wget -O user-expired.sh "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/freak/user-expired.sh"
-wget -O userlimit.sh "https://raw.githubusercontent.com/suryadewa/fornesiavps/fns/limit.sh"
-wget -O user-list.sh "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/freak/user-list.sh"
+wget -O user-login.sh "https://raw.githubusercontent.com/aabell3/ngaco/master/freak/user-login.sh"
+wget -O user-expired.sh "https://raw.githubusercontent.com/aabell3/ngaco/master/freak/user-expired.sh"
+wget -O userlimit.sh "https://raw.githubusercontent.com/aabell3/ngaco/master/null/limit.sh"
+wget -O user-list.sh "https://raw.githubusercontent.com/aabell3/ngaco/master/freak/user-list.sh"
 wget -O /etc/issue.net "https://raw.githubusercontent.com/aabell3/ngaco/master/null/banner"
 echo "0 0 * * * root /root/user-expired.sh" > /etc/cron.d/user-expired
 echo "@reboot root /root/userlimit.sh" > /etc/cron.d/userlimit
@@ -238,7 +238,7 @@ chmod +x speedtest_cli.py
 chmod +x ps_mem.py
 chmod +x user-login.sh
 chmod +x user-expired.sh
-#chmod +x userlimit.sh
+chmod +x userlimit.sh
 chmod +x dropmon
 chmod +x user-list.sh
 
