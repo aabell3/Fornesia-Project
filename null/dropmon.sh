@@ -42,7 +42,7 @@ do
     fi
 done
 echo "----------------------------------------------------------------" 
-echo "          Auto Script VPS Install www.fornesia.com     " 
+echo "          Auto Script VPS Install www.vpsmurah.me     " 
 else
 echo "  Gunakan perintah ./dropmon.sh [port]"
 echo "  contoh : ./dropmon.sh 443"
